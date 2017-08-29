@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   get "/students/:id" => "students#update"
   get "/students/:id" => "students#destroy"
 
-  get "/Derek" => "dereks#awesome"
+  get '/experiences' => 'experiences/index'
+  post '/experiences' => 'experiences/create'
+  get '/experiences/:id' => 'experiences/show'
+  patch '/experiences/:id' => 'experiences/update'
+  delete '/experiences/:id' => 'experiences/destroy'
 end
