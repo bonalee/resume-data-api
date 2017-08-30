@@ -20,3 +20,8 @@ Skill.create(name: "Ruby", student_id: 1)
 Skill.create(name: "Python", student_id: 2)
 Skill.create(name: "Javascript", student_id: 4)
 Skill.create(name: "clojure", student_id: 3)
+
+Capstone.create(name: "Art Starr", description: "Stuff and things here", url: "art.com", screenshot: "", student_id: "2")
+Capstone.create(name: "Doggy Beds", description: "No cats here", url: "dog.com", screenshot: "", student_id: "1")
+Capstone.create(name: "Money maker", description: "Loads of money here", url: "money.com", screenshot: "", student_id: "3")
+Capstone.create(name: "Dead inside", description: "Nothing but death here", url: "death.com", screenshot: "", student_id: "4")
