@@ -5,7 +5,10 @@ class SkillsController < ApplicationController
   end
 
   def create
-
+    skills = Skill.new(
+      name: params[:name],
+      student_id: params[:student_id]
+      )
   end
 
   def show
@@ -13,10 +16,15 @@ class SkillsController < ApplicationController
   end
 
   def update
-
+    skills = Skill.find_by(id: params[:id])
+    skill.update(
+      name: params[:name],
+      student_id: params[:student_id]
+      )
   end
 
   def destory
-
+    skill = Skill.find_by(id: params[:id])
+    skill.destory
   end
 end
