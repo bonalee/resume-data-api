@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20170829015336) do
     t.text "description"
     t.string "url"
     t.string "screenshot"
+    t.string "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "student_id"
   end
 
   create_table "educations", force: :cascade do |t|
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 20170829015336) do
     t.string "degree"
     t.string "university_name"
     t.text "details"
+    t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "student_id"
   end
 
   create_table "experiences", force: :cascade do |t|
@@ -42,16 +42,16 @@ ActiveRecord::Schema.define(version: 20170829015336) do
     t.string "job_title"
     t.string "company_name"
     t.text "details"
+    t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "student_id"
   end
 
   create_table "skills", force: :cascade do |t|
     t.string "name"
+    t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "student_id"
   end
 
   create_table "students", force: :cascade do |t|
