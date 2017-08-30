@@ -1,1 +1,1 @@
-json.(@education, :start_date, :end_date, :degree, :university_name, :details)
+json.(@education, :id, :start_date, :end_date, :degree, :university_name, :details)
