@@ -1,6 +1,22 @@
 class SkillsController < ApplicationController
 
   def index
-    render "index.html.erb"
+    render "index.json"
+  end
+
+  def create
+
+  end
+
+  def show
+    render "show.json"
+  end
+
+  def update
+
+  end
+
+  def destory
+
   end
 end
