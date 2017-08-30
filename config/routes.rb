@@ -1,18 +1,36 @@
 Rails.application.routes.draw do
 
+
   get "educations/" => "educations"
-
   get "educations/:id" => "educations#show"
-
-
   get "educations/" => "educations#create"
+  get "educations/:id" => "educations#update'
+  get '
 
-  get 'educations/:id" => "educations#update'
 
-  get 'educations/destroy'
+  get "/students" => "students#index"
+  get "/students/:id" => "students#show"
+  get "/students" => "students#create"
+  get "/students/:id" => "students#update"
+  get "/students/:id" => "students#destroy"
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "/capstone" => "capstones#index"
+  post "/capstone" => "capstones#create"
+  get "/capstone/:id" => "capstones#show"
+  patch "/capstone/:id" => "capstones#update"
+  delete "/capstone/:id" => "capstones#destroy"
 
-  get "/Derek" => "dereks#awesome"
-  
+  get "/skill" => "skills#index"
+  post "/skill" => "skills#create"
+  get "/skill/:id" => "skills#show"
+  patch "/skill/:id" => "skills#update"
+  delete "/skill/:id" => "skills#destroy"
+
+  get '/experiences' => 'experiences#index'
+  post '/experiences' => 'experiences#create'
+  get '/experiences/:id' => 'experiences#show'
+  patch '/experiences/:id' => 'experiences#update'
+  delete '/experiences/:id' => 'experiences#destroy'
+>>>>>>> 2566763478c5fba85ec54ee7e1d575f93ec1479d
+
 end
