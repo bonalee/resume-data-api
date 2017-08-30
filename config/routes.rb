@@ -1,23 +1,4 @@
 Rails.application.routes.draw do
-
-
-
-  get "educations/" => "educations"
-
-  get "educations/:id" => "educations#show"
-  get "educations/" => "educations#create"
-  get "educations/:id" => "educations#update"
-
-
-  get "educations/:id" => "educations#show"
-
-
-  get "educations/" => "educations#create"
-
-  get "educations/:id" => "educations#update"
-
-
-
   get "/students" => "students#index"
   get "/students/:id" => "students#show"
   post "/students" => "students#create"
