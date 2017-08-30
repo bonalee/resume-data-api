@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+
+  get "educations/" => "educations"
+
+  get "educations/:id" => "educations#show"
+
+
+  get "educations/" => "educations#create"
+
+  get 'educations/:id" => "educations#update'
+
+  get 'educations/destroy'
+
+
   get "/students" => "students#index"
   get "/students/:id" => "students#show"
   get "/students" => "students#create"
@@ -22,5 +36,6 @@ Rails.application.routes.draw do
   get '/experiences/:id' => 'experiences#show'
   patch '/experiences/:id' => 'experiences#update'
   delete '/experiences/:id' => 'experiences#destroy'
+
 
 end
