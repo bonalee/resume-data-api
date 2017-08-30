@@ -4,7 +4,6 @@ class EducationsController < ApplicationController
     render "index.json.jbuilder"
   end
 
-
   def show
     @educations = Education.find_by(id: params[:id])
     render "show.json.jbuilder"
@@ -19,7 +18,6 @@ class EducationsController < ApplicationController
       details:[:degree]
       )
     redirect_to "/educations"
-  
   end
 
   def update
@@ -34,7 +32,3 @@ class EducationsController < ApplicationController
     redirect_to "/educations"
   end
 end
- 
-
-
-  
