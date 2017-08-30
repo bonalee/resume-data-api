@@ -1,3 +1,4 @@
+json.student_id @student.id
 json.first_name @student.first_name
 json.last_name @student.last_name
 json.email @student.email
@@ -9,7 +10,7 @@ json.website_url @student.website_url
 json.resume_url @student.resume_url
 json.github_url @student.github_url
 json.photo @student.photo
-json.educations @student.educations
-json.experiences @student.experiences
-json.capstones @student.capstones
-json.skills @student.skills
+json.educations @student.education
+json.experiences @student.experience
+json.capstones @student.capstone
+json.skills @student.skill

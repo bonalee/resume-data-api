@@ -5,7 +5,7 @@ class EducationsController < ApplicationController
   end
 
   def show
-    @educations = Education.find_by(id: params[:id])
+    @education = Education.find_by(id: params[:id])
     render "show.json.jbuilder"
   end
 
