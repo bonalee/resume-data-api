@@ -1,1 +1,2 @@
-<h1>SHOW CAPSTONE STUFF</h1>
+json.name @skill.name
+json.student_id @skill.student_id
