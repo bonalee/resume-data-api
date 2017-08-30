@@ -33,6 +33,8 @@ Experience.create(start_date: 18.months.ago, end_date: Time.now, job_title: "Ice
 Education.create(start_date: 5.years.ago, end_date: 4.years.ago, degree: "BS", university_name: "Univerity of Aweseome", details: "WJK;alhsoiuwerakvm,coja", student_id: 1)
 
 
+
+
 Education.create(start_date: 2.years.ago, end_date: 1.years.ago, degree: "ms", university_name: "NIU", details: "hbcsb", student_id: 2 )
 
 Education.create(start_date: 5.years.ago, end_date: 3.years.ago, degree: "bs,", university_name: "BYU", details: "gcvvcywv", student_id: 3)

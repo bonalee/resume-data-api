@@ -2,10 +2,22 @@ Rails.application.routes.draw do
 
 
   get "educations/" => "educations"
+
   get "educations/:id" => "educations#show"
   get "educations/" => "educations#create"
   get "educations/:id" => "educations#update'
   get '
+=======
+
+  get "educations/:id" => "educations#show"
+
+
+  get "educations/" => "educations#create"
+
+  get 'educations/:id" => "educations#update'
+
+  get 'educations/destroy'
+
 
 
   get "/students" => "students#index"
@@ -31,6 +43,6 @@ Rails.application.routes.draw do
   get '/experiences/:id' => 'experiences#show'
   patch '/experiences/:id' => 'experiences#update'
   delete '/experiences/:id' => 'experiences#destroy'
->>>>>>> 2566763478c5fba85ec54ee7e1d575f93ec1479d
+
 
 end
